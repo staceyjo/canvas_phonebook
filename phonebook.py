@@ -137,6 +137,7 @@ print (menu)
 # Merge pull request to main on GitHub
 # Pull request successful, workfornt complete. 
 
+user_input
 #Workfront Effort #2
 # "What do you want to do? 1-5"
 # Well first I want to rephrase it to make it spicy
@@ -151,7 +152,3 @@ print (menu)
 # we have to prompt the user to input 1-5
 
 selected_option = input("Please select an option (1-5) then, hit enter to continue:") 
-
-# to see if the file works: 
-
-print(selected_option)
