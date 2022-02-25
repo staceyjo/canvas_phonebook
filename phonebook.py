@@ -137,3 +137,18 @@ print (menu)
 # Merge pull request to main on GitHub
 # Pull request successful, workfornt complete. 
 
+user_input
+#Workfront Effort #2
+# "What do you want to do? 1-5"
+# Well first I want to rephrase it to make it spicy
+# What would you like to do?"
+# "Please select an option 1-5 then, hit enter to continue: 
+
+# Next I want to create a new branch to do this workfront:
+# git checkout -b creates a new branch and swithces at the same time
+# git checkout -b user_input
+
+#So now that it prints the menu, 
+# we have to prompt the user to input 1-5
+
+selected_option = input("Please select an option (1-5) then, hit enter to continue:") 
