@@ -152,3 +152,16 @@ user_input
 # we have to prompt the user to input 1-5
 
 selected_option = input("Please select an option (1-5) then, hit enter to continue:") 
+
+# to see if the file works to get their choice: 
+
+# print(selected_option)
+
+#NEW WORK EFFORT
+#If they choose to input an entry, 
+# you will 1: ask them to enter a name
+# then you will 2: ask them to enter a phone number
+# So since this is a new feature, 
+# we need to cut a new branch off the main
+# using git checkout - b
+# but first make sure you're on the main branch
