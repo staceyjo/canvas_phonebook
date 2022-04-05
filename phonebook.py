@@ -24,11 +24,8 @@ Electronic Phone Book
 # The user will provide the name
 # Then I command an output that deletes the entry
 
-
-
 # 4. List all entries- COMPLETE
 # Print all items in the list as option for a user to select
-
 
 # 5. Quit
 # If they select this open 
@@ -77,14 +74,14 @@ names = ["Beyonce", "Rihanna", "Whitney"]
 
 my_function(names)
 """
-''''''
+#''''''
 # 1 = Look up an entry
-a = "Look up an entry"
-b = "Set an entry"
-c = "Delete an entry"
-d = "List all entries"
-e = "Quit"
-''''''
+# a = "Look up an entry"
+# b = "Set an entry"
+# c = "Delete an entry"
+# d = "List all entries"
+# e = "Quit"
+#''''''
 
 # If the user enters 1, I want the output to be a list of names
 # names = ("Beyonce", "Rihanna", "Whitney")
@@ -107,9 +104,11 @@ e = "Quit"
 # create a variable, menu()
 # paste the list from Canvas: 
 
+hasQuit = False
+phonebook = {}
 
 menu = """
-Electronic Phone Book
+Stacey's Electronic Phone Book
 =====================
 1. Look up an entry
 2. Set an entry
@@ -117,9 +116,43 @@ Electronic Phone Book
 4. List all entries
 5. Quit
 """
+# print(menu)
+
+while not(hasQuit):
+
+  while hasQuit:
+    print(menu)
+
+  selected_option = input("Please select an option (1-5)") 
+  # print(selected_option)
+
+  if selected_option == "2":
+    name = input("What is the contact's name?")
+    phone_number = input("What is their phone number?")
+    phonebook[name] = phone_number
+    print("Contact added successfully!")
+    #print(menu)
+
+  elif selected_option =="1":
+    name = input("What contact's number would you like?")
+    print("Here is their contact number:", (phonebook[name]))
+    #print(menu)
+
+    if phonebook.get(name) == None:
+      print("Theres no contact with that name. Please try again.")
+
+    else:
+      print("Here's the number: ", (phonebook[name]))
+
+  elif selected_option =="5":
+    hasQuit = True
+
+
+
+    
 
 # Now let's test it to see if it works:
-print (menu)
+#print (menu)
 
 # check the status: git status
 # git add .
@@ -137,7 +170,7 @@ print (menu)
 # Merge pull request to main on GitHub
 # Pull request successful, workfornt complete. 
 
-user_input
+
 #Workfront Effort #2
 # "What do you want to do? 1-5"
 # Well first I want to rephrase it to make it spicy
@@ -151,7 +184,7 @@ user_input
 #So now that it prints the menu, 
 # we have to prompt the user to input 1-5
 
-selected_option = input("Please select an option (1-5) then, hit enter to continue:") 
+# selected_option = input("Please select an option (1-5) then, hit enter to continue:") 
 
 # to see if the file works to get their choice: 
 
